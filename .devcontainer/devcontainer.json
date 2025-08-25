@@ -1,0 +1,20 @@
+{
+ "name": "Rails Claude API Tester",
+ "image": "mcr.microsoft.com/devcontainers/ruby:3.2",
+ "features": {
+   "ghcr.io/devcontainers/features/node:1": {
+     "version": "20"
+   },
+   "ghcr.io/devcontainers/features/github-cli:1": {}
+ },
+ "forwardPorts": [3000],
+ "customizations": {
+   "vscode": {
+     "extensions": [
+       "shopify.ruby-lsp",
+       "bradlc.vscode-tailwindcss"
+     ]
+   }
+ },
+ "postCreateCommand": "gem install rails && curl -fsSL https://claude.ai/cli/install.sh | bash"
+}
