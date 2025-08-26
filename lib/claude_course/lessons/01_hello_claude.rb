@@ -28,7 +28,7 @@ markdown <<~MD
 MD
 
 cell <<~RUBY, "Criando cliente Anthropic"
-  require "ruby-anthropic"
+  require "ruby/anthropic"
   
   client = Anthropic::Client.new(
     access_token: ENV["ANTHROPIC_API_KEY"]

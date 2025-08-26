@@ -1,6 +1,6 @@
 require "colorize"
 require "rouge"
-require "ruby-anthropic"
+require "ruby/anthropic"
 
 module ClaudeCourse
   class NotebookRunner
